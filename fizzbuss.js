@@ -1,4 +1,8 @@
 function fizzbuzz(numero) {
+    if(typeof numero !== 'number') {
+        return new Error('Você é um usuário sacana')
+    }
+
     if(numero % 5 == 0 && numero% 3 == 0) {
         return 'FizzBuzz';
     }

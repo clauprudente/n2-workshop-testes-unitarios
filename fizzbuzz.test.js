@@ -31,5 +31,10 @@ describe('Se o número não for multiplo de 3 ou de 5 ele deve retornar ele mesm
     it('Se for multiplo de 3 e 5, retorna FizzBuzz'), () => {
         const resultado = fizzbuzz(15)
         expect(resultado).to.be.equal('FizzBuzz')
-    }   
+    }  
+    
+    it('Se o usuário for sacana e digitar algo que não é um número, retorna erro'), () => {
+        const resultado = fizzbuzz('szbrubuls')
+        expect(resultado).to.be.an('error')
+    }  
 })
