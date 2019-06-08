@@ -16,5 +16,3 @@ function fizzbuzz(numero) {
 }
 
 module.exports = fizzbuzz;
-
-//teste git
