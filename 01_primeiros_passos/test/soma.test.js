@@ -23,8 +23,11 @@ describe('Deve retornar a soma de dois números', () => {
         expect(soma(3,5,7,9)).to.be.an('error');
     })
 
-    it('A soma deve retornar um erro quando o usuário passa uma letra', () => {
-        expect(soma('banana')).to.be.an('error');
+    it('A soma deve retornar um erro quando o usuário passa letra nos dois parametros', () => {
+        expect(soma('banana', 'banana')).to.be.an('error');
     })
 
+    it('A soma deve retornar um erro quando o usuário passa letra em um dos parametros', () => {
+        expect(soma(2, 'banana')).to.be.an('error');
+    })
 })
