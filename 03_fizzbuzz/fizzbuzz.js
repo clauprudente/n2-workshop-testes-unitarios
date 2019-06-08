@@ -7,7 +7,7 @@ function fizzbuzz(numero) {
         return 'FizzBuzz';
     }
     else if(numero % 3 == 0) {
-        return 'Fizz';
+        return 'Fizz'; 
     }
     else if(numero % 5 == 0) {
         return 'Buzz';
@@ -16,3 +16,5 @@ function fizzbuzz(numero) {
 }
 
 module.exports = fizzbuzz;
+
+//teste git
