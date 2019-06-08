@@ -26,5 +26,10 @@ describe('Se o número não for multiplo de 3 ou de 5 ele deve retornar ele mesm
     it('Se for multiplo de 5, retorna Buzz'), () => {
         const resultado = fizzbuzz(10)
         expect(resultado).to.be.equal('Buzz')
-    }    
+    }   
+    
+    it('Se for multiplo de 3 e 5, retorna FizzBuzz'), () => {
+        const resultado = fizzbuzz(15)
+        expect(resultado).to.be.equal('FizzBuzz')
+    }   
 })
